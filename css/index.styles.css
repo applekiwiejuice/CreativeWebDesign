@@ -16,6 +16,10 @@ p .raleway {
   font-family: 'Raleway', sans-serif;
 }
 
+.topLogo {
+  width: 70px;
+}
+
 .center {
   align-items: center;
   justify-content: center;
