@@ -1,6 +1,18 @@
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  color: #bc6ff1;
+  background: #00072b;
+  background-image: url("https://i.imgur.com/syhwIdOh.jpg");
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
 
 .borderRadius {
   border-radius: 10px;
@@ -9,15 +21,16 @@ html {
 }
 
 h1 h2 .zilla {
-  font-family: 'Zilla Slab', serif;
+  font-family: "Zilla Slab", serif;
 }
 
 p .raleway {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .topLogo {
-  width: 70px;
+  width: 60px;
+  background-color: transparent;
 }
 
 .center {
@@ -30,7 +43,7 @@ p .raleway {
 }
 
 .violetBackground {
-  background-color:  rgba(155, 89, 182, 0.9);
+  background-color: rgba(155, 89, 182, 0.9);
 }
 
 .imgCover {
