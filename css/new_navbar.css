@@ -24,7 +24,12 @@
   font-size: 2rem;
 }
 
-.nav1 div.logo a:hover {
+/* LOGO SIZE */
+.nav1 div.logo a img {
+  width: 12rem;
+}
+
+.nav1 div.logo a:hover img:hover {
   color: rgba(155, 89, 182, 0.9);
 }
 
@@ -167,7 +172,7 @@
   .navTrigger {
     display: block;
   }
-  .nav1 div.logo {
+  .nav1 div.logo img {
     margin-left: 15px;
   }
   .nav1 div.main_list {
