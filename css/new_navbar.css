@@ -195,6 +195,7 @@
     opacity: 0.9;
     /*same background color of navbar*/
     background-position: center top;
+    z-index: 10;
   }
   .nav1 div.main_list ul li {
     width: 100%;

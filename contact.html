@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="description" content="ZUPCLOTHING" />
     <meta name="author" content="Group 2 Creative Web Design 2020" />
     <link rel="icon" href="./favicon.ico" />
@@ -35,7 +35,7 @@
       crossorigin="anonymous"
     ></script>
 
-     <!-- BOOTSTRAP SOCIAL -->
+    <!-- BOOTSTRAP SOCIAL -->
     <link rel="stylesheet" href="./css/bootstrap-social.css" />
 
     <!-- Bootstrap core CSS -->
@@ -53,7 +53,10 @@
     <link rel="stylesheet" href="./mdb_starter/resources/css/mdb.min.css" />
 
     <!-- Material Design Bootstrap -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css"
+      rel="stylesheet"
+    />
 
     <!-- NIKS CUSTOM CSS -->
     <link rel="stylesheet" href="./css_from_niks/style_niks.css" />
@@ -78,6 +81,55 @@
 
     <!-- Normalize css -->
     <link rel="stylesheet" href="./css/normalize.css" />
+
+    <style type="text/css">
+      .map-container {
+        height: 280px;
+        position: relative;
+      }
+
+      .map-container iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+      }
+      .btnsubmit {
+        background-color: transparent;
+        color: #fff;
+        border: 2px solid #9b59b6;
+        transition: 0.5s;
+        font-size: 16px;
+        padding: 12px 30px;
+        border-radius: 10px;
+      }
+
+      .btnsubmit:hover {
+        background-color: #9b59b6;
+        border-radius: 10px;
+        color: #fff;
+      }
+
+      .contactus {
+        font-family: "Zilla Slab";
+      }
+
+      .contact-icons {
+        color: #9b59b6;
+      }
+
+      #contact-bg {
+        width: 100%;
+        height: 40vh;
+        background-image: url("https://i.imgur.com/QMFI6bUh.jpg") !important; /*Pakichange nalang ito nung bg*/
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        background-attachment: fixed;
+        opacity: 0.9;
+      }
+    </style>
   </head>
   <body>
     <header style="margin-bottom: 100px">
@@ -96,11 +148,7 @@
               <li><a href="./mens.html">Mens</a></li>
               <li><a href="./womens.html">Womens</a></li>
               <li>
-                <a
-                  style="font-weight: bolder; text-decoration: underline"
-                  href="./contact.html"
-                  >Contact</a
-                >
+                <a href="./contact.html">Contact</a>
               </li>
               <li>
                 <a href="#"><i class="fas fa-search fa-lg"></i></a>
@@ -109,7 +157,9 @@
                 <a href="#"><i class="fas fa-shopping-cart"></i></a>
               </li>
               <li>
-                <a href="#"><i class="fas fa-user-circle fa-lg"></i></a>
+                <a data-toggle="modal" data-target="#signUp">
+                  <i class="fas fa-user-circle fa-lg"></i>
+                </a>
               </li>
             </ul>
           </div>
@@ -122,229 +172,421 @@
       </nav>
     </header>
 
-    <div class="container">
-      <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
-        <div class="col-md-6 px-0">
-          <h1 class="display-4">ZupClothing Team</h1>
-          <p class="lead my-3">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-            dapibus justo purus, quis facilisis ante fringilla vel. Suspendisse
-            pretium lobortis turpis. Donec non risus at lectus mattis luctus at
-            quis metus.
-          </p>
+    <div id="contact-bg">
+      <div class="container-fluid py-5">
+        <div class="row">
+          <div class="col-12 text-center text-white text-contact">
+            <h1
+              style="filter: drop-shadow(2px 4px 8px black)"
+              class="font-weight-bold contactus mt-5"
+            >
+              Contact Us
+            </h1>
+            <p
+              style="filter: drop-shadow(2px 4px 8px black)"
+              class="text-white h4"
+            >
+              Have a questions? We'd love to hear from you
+            </p>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-      <div
-        class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden"
-      >
-        <div class="my-3 py-3">
-          <h2 class="display-5">Ms. Angeli</h2>
-          <p class="lead">Project Head/Instructor</p>
+    <div class="container-fluid py-5">
+      <div class="row row-margin">
+        <!-- Contact Form -->
+        <div class="col-lg-5 col-md-12 mb-4 mb-md-0">
+          <div class="md-form mt-3">
+            <input type="email" id="form-fullname" class="form-control" />
+            <label for="form-fullname" class="text-white">Fullname*</label>
+          </div>
+
+          <div class="md-form">
+            <input type="text" id="form-subject" class="form-control" />
+            <label for="form-subject" class="text-white">Subject*</label>
+          </div>
+
+          <div class="md-form">
+            <input type="text" id="form-email" class="form-control" />
+            <label for="form-email" class="text-white">Email Address*</label>
+          </div>
+
+          <div class="md-form">
+            <input type="text" id="form-contact" class="form-control" />
+            <label for="form-contact" class="text-white">Contact number*</label>
+          </div>
+
+          <div class="md-form mb-3">
+            <textarea
+              id="form-message"
+              class="md-textarea form-control"
+              rows="3"
+            ></textarea>
+            <label for="form-message" class="text-white">Message</label>
+          </div>
+          <button type="button" class="button btnsubmit btn-block ml-0">
+            SUBMIT<i class="far fa-paper-plane ml-2"></i>
+          </button>
         </div>
-        <img
-          src="https://i.imgur.com/QyaIiS1h.png"
-          class="bg-light shadow-sm mx-auto"
-          style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; object-fit: cover;"
-        ></img>
-      </div>
-      <div
-        class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
-      >
-         <div class="my-3 py-3">
-          <h2 class="display-5">Yanna</h2>
-          <p class="lead">Lead UI/UX and Product Designer</p>
+        <!-- End of Contact Form -->
+
+        <!-- GMap with icons -->
+        <div class="col-lg-7 col-md-12 mb-0 mb-md-0 mt-3 text-white">
+          <!--Google map-->
+          <div id="map-container-google-1" class="z-depth-1 map-container mb-4">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61781.701616326456!2d121.04615147005877!3d14.578759192871063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c7dc88f7b24f%3A0x4a592b2b4b34fd89!2sPasig%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1604477951189!5m2!1sen!2sph"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <!--Google Maps-->
+          <div class="row text-center">
+            <!--Icons-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <i class="contact-icons fas fa-map-marker-alt fa-2x"></i>
+              <p class="font-weight-bold my-3">Address</p>
+              <p class="">Pasig City</p>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <i class="contact-icons fas fa-phone fa-2x"></i>
+              <p class="font-weight-bold my-3">Phone number</p>
+              <p class="">09 234 567 893</p>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <i class="contact-icons fas fa-envelope fa-2x"></i>
+              <p class="font-weight-bold my-3">E-mail</p>
+              <p class="">zupclothing@gmail.com</p>
+            </div>
+            <!--Icons-->
+          </div>
         </div>
-        <img
-          src="https://i.imgur.com/QyaIiS1h.png"
-          class="bg-light shadow-sm mx-auto"
-          style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; object-fit: cover;"
-        ></img>
+        <!-- End of GMap with icons -->
       </div>
     </div>
-
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-      <div
-        class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
-      >
-       <div class="my-3 py-3">
-          <h2 class="display-5">Jun</h2>
-          <p class="lead">Team Leader/Consultant</p>
-        </div>
-        <img
-          src="https://i.imgur.com/QyaIiS1h.png"
-          class="bg-light shadow-sm mx-auto"
-          style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; object-fit: cover;"
-        ></img>
-      </div>
-      <div
-        class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
-      >
-         <div class="my-3 py-3">
-          <h2 class="display-5">Niks</h2>
-          <p class="lead">Front-end Engineer and Product Designer</p>
-        </div>
-        <img
-          src="https://i.imgur.com/QyaIiS1h.png"
-          class="bg-light shadow-sm mx-auto"
-          style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; object-fit: cover;"
-        ></img>
-      </div>
-    </div>
-
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-      <div
-        class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
-      >
-        <div class="my-3 py-3">
-          <h2 class="display-5">Ajie</h2>
-          <p class="lead">Front-end Engineer, Business Concepts and Product Designer</p>
-        </div>
-        <img
-          src="https://i.imgur.com/QyaIiS1h.png"
-          class="bg-light shadow-sm mx-auto"
-          style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; object-fit: cover;"
-        ></img>
-      </div>
-      <div
-        class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
-      >
-       <div class="my-3 py-3">
-          <h2 class="display-5">Mc</h2>
-          <p class="lead">Project Manager</p>
-        </div>
-        <img
-          src="https://i.imgur.com/QyaIiS1h.png"
-          class="bg-light shadow-sm mx-auto"
-          style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; object-fit: cover;"
-        ></img>
-      </div>
-    </div>
-
-    <!-- <footer class="text-muted">
-      <div class="container">
-        <p class="float-right">
-          <a href="#">Back to top <i class="fas fa-level-up-alt"></i></a>
-        </p>
-      </div>
-    </footer> -->
 
     <!-- SNIPPETS FROM NIKS -->
-      <footer class="page-footer mt-5">
-        <div class="container-fluid text-md-left py-5">
-          <div class="row row-margin">
-            <div class="col-md-4 col-lg-4">
-              <a class="" href="./index.html"
-                ><img
-                  class="Logo img-fluid"
-                  src="https://i.imgur.com/30zUC0T.png"
-                  alt="ZupClothing Logo"
-              /></a>
-              <!-- <p class="footer-about h5 mt-3">About Zup Clothing</p> -->
-              <p class="h6 mt-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <div class="footer-social-icons mb-sm-3">
-                <p class="footer-follow h5 mt-3">FIND US ON</p>
-                <ul class="list-unstyled list-inline mb-0 mt-4">
-                  <li class="list-inline-item">
-                    <a class="" href="#" target="_blank">
-                      <i class="fab fa-facebook fa-2x"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a class="" href="#" target="_blank">
-                      <i class="fab fa-twitter fa-2x"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a class="" href="#" target="_blank">
-                      <i class="fab fa-instagram fa-2x"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+    <footer class="page-footer mt-5">
+      <div class="container-fluid text-md-left py-5">
+        <div class="row row-margin">
+          <div class="col-md-4 col-lg-4">
+            <a class="" href="./index.html"
+              ><img
+                class="Logo img-fluid"
+                src="https://i.imgur.com/30zUC0T.png"
+                alt="ZupClothing Logo"
+            /></a>
+            <!-- <p class="footer-about h5 mt-3">About Zup Clothing</p> -->
+            <p class="h6 mt-4">
+              ZC is the leading name in online shopping for fashion, carrying an
+              ever-expanding line-up of top local and international brands
+              tailored for consumers around the world. Our selection of over
+              120.000 products covers every aspect of fashion, for men and women
+              and so much more.
+            </p>
+            <div class="footer-social-icons mb-sm-3">
+              <p class="footer-follow h5 mt-3">FIND US ON</p>
+              <ul class="list-unstyled list-inline mb-0 mt-4">
+                <li class="list-inline-item">
+                  <a class="" href="#" target="_blank">
+                    <i class="fab fa-facebook fa-2x"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="" href="#" target="_blank">
+                    <i class="fab fa-twitter fa-2x"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="" href="#" target="_blank">
+                    <i class="fab fa-instagram fa-2x"></i>
+                  </a>
+                </li>
+              </ul>
             </div>
-            <div class="col-md-2 col-lg-2">
-              <div class="helpful-links">
-                <p class="h5 footer-products">Products</p>
-                <ul class="list-unstyled mt-4">
-                  <li>
-                    <a href="./mens.html">Men</a>
-                  </li>
-                  <li>
-                    <a href="./womens.html">Women</a>
-                  </li>
-                </ul>
-              </div>
+          </div>
+          <div class="col-md-2 col-lg-2">
+            <div class="helpful-links">
+              <p class="h5 footer-products">Products</p>
+              <ul class="list-unstyled mt-4">
+                <li>
+                  <a href="./mens.html">Men</a>
+                </li>
+                <li>
+                  <a href="./womens.html">Women</a>
+                </li>
+              </ul>
             </div>
+          </div>
 
-            <div class="col-md-2 col-lg-2">
-              <div class="helpful-links">
-                <p class="h5 footer-info">Information</p>
-                <ul class="list-unstyled mt-4">
-                  <li>
-                    <a href="./index.html">Home</a>
-                  </li>
-                  <li>
-                    <a href="./about.html">About</a>
-                  </li>
-                  <li>
-                    <a href="./contact.html">Contact</a>
-                  </li>
-                </ul>
-              </div>
+          <div class="col-md-2 col-lg-2">
+            <div class="helpful-links">
+              <p class="h5 footer-info">Information</p>
+              <ul class="list-unstyled mt-4">
+                <li>
+                  <a href="./index.html">Home</a>
+                </li>
+                <li>
+                  <a href="./about.html">About</a>
+                </li>
+                <li>
+                  <a href="./contact.html">Contact</a>
+                </li>
+                <!-- FEEDBACK MODAL -->
+                <li>
+                  <a data-toggle="modal" data-target="#feedback">Feedback</a>
+                </li>
+              </ul>
             </div>
+          </div>
 
-            <div class="col-md-4 col-lg-4">
-              <div class="newtozupclothing">
-                <p class="h5 footer-info">New to Zup Clothing?</p>
-                <ul class="list-unstyled mt-4">
-                  <li>
-                    <p>
-                      Be the first one to get the latest updates from Zup
-                      Clothing and get
-                      <span class="voucher">Php 500 VOUCHER.</span>
-                    </p>
-                  </li>
-                  <li>
-                    <div class="md-form">
-                      <input
-                        type="text"
-                        id="form-subject"
-                        class="form-control"
-                      />
-                      <label for="form-subject" class="text-white"
-                        >Email Address</label
+          <div class="col-md-4 col-lg-4">
+            <div class="newtozupclothing">
+              <p class="h5 footer-info">New to Zup Clothing?</p>
+              <ul class="list-unstyled mt-4">
+                <li>
+                  <p>
+                    Be the first one to get the latest updates from Zup Clothing
+                    and get
+                    <span class="voucher">Php 500 VOUCHER.</span>
+                  </p>
+                </li>
+                <li>
+                  <div class="md-form">
+                    <input type="text" id="form-subject" class="form-control" />
+                    <label for="form-subject" class="text-white"
+                      >Email Address</label
+                    >
+                  </div>
+                  <!-- BUTTONS RESPONSIVE ISSUE HERE -->
+                  <div style="display: flex; justify-content: space-between">
+                    <!-- <div class="float-left"> -->
+                    <button type="button" class="button btnwomen">
+                      FOR WOMEN
+                    </button>
+                    <!-- </div> -->
+                    <!-- <div class="float-right"> -->
+                    <button type="button" class="button btnmen">FOR MEN</button>
+                    <!-- </div> -->
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright text-center py-3 text-white">
+        © 2020
+        <a href="#">Zup Clothing - All rights reserved.</a>
+        <p>
+          Created with dedication, hard work and passion by Group 2 - Creative
+          Web Design Batch 1 -
+          <a
+            href="https://www.facebook.com/mindtechTC/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Mindtech Training And Development Institute Inc.</a
+          >
+        </p>
+        <a href="./team.html">Meet the team!</a>
+      </div>
+    </footer>
+
+    <!-- Sign-up Modal -->
+    <div
+      class="modal fade"
+      id="signUp"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container mt-1">
+              <h1>
+                <img
+                  src="https://i.imgur.com/xirkbAI.jpg"
+                  alt="ZC Logo"
+                  width="80"
+                  height="80"
+                />
+                SIGN-UP
+              </h1>
+
+              <div class="row">
+                <div class="col-sm-8">
+                  <div class="card">
+                    <div class="card-body">
+                      <!-- Makes POST request to /register route -->
+                      <form action="/register" method="POST">
+                        <div class="form-group">
+                          <label for="email">Email</label>
+                          <input
+                            type="email"
+                            class="form-control"
+                            name="username"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label for="password">Password</label>
+                          <input
+                            type="password"
+                            class="form-control"
+                            name="password"
+                          />
+                        </div>
+                        <button type="submit" class="btn btn-dark">
+                          Register
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-4">
+                  <div class="card social-block">
+                    <div class="card-body">
+                      <a
+                        class="btn btn-block btn-social btn-google"
+                        href="/auth/google"
+                        role="button"
                       >
+                        <i class="fab fa-google"></i>
+                        Sign Up with Google
+                      </a>
                     </div>
-                    <!-- BUTTONS RESPONSIVE ISSUE HERE -->
-                    <div style="display: flex; justify-content: space-between">
-                      <!-- <div class="float-left"> -->
-                      <button type="button" class="button btnwomen">
-                        FOR WOMEN
-                      </button>
-                      <!-- </div> -->
-                      <!-- <div class="float-right"> -->
-                      <button type="button" class="button btnmen">
-                        FOR MEN
-                      </button>
-                      <!-- </div> -->
+                    <div class="card-body">
+                      <a
+                        class="btn btn-block btn-social btn-facebook"
+                        href="/auth/facebook"
+                        role="button"
+                      >
+                        <i class="fab fa-facebook"></i>
+                        Sign Up with Facebook
+                      </a>
                     </div>
-                  </li>
-                </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="footer-copyright text-center py-3 text-white">
-          © 2020
-          <a href="#">Zup Clothing - All rights reserved.</a>
+      </div>
+    </div>
+
+    <!-- FEEDBACK MODAL -->
+    <div
+      class="modal fade"
+      id="feedback"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="py-1 text-center">
+              <img
+                class="d-block mx-auto mb-1"
+                src="https://i.imgur.com/xirkbAI.jpg"
+                alt="ZC Logo"
+                width="80"
+                height="80"
+              />
+              <h3>We'd like to hear from you!</h3>
+            </div>
+            <form>
+              <div class="mb-1">
+                <label for="firstName">Name*</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="tName"
+                  placeholder=""
+                  value=""
+                  required
+                />
+              </div>
+
+              <div class="mb-1">
+                <label for="email">Email*</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="you@example.com"
+                  required
+                />
+              </div>
+              <div class="mb-1">
+                <label for="cellPhone">Phone</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="cellPhone"
+                  placeholder=""
+                  value=""
+                />
+              </div>
+
+              <div class="mb-1">
+                <label for="address">Store Location*</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="address"
+                  placeholder="1234 Main St"
+                  required
+                />
+              </div>
+
+              <div class="mb-1">
+                <label for="message">Message</label>
+              </div>
+              <div class="mb-1">
+                <textarea
+                  id="story"
+                  class="form-control"
+                  name="story"
+                  rows="2"
+                  cols="55"
+                ></textarea>
+              </div>
+
+              <hr class="mb-1" />
+              <button class="btn btn-success btn-sm btn-block" type="submit">
+                Submit
+              </button>
+            </form>
+          </div>
         </div>
-      </footer>
+      </div>
+    </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -372,7 +614,7 @@
     <script src="./bootstrap_starter/popper.min.js"></script>
     <script src="./bootstrap_starter/bootstrap.min.js"></script>
     <script src="./bootstrap_starter/jq.js"></script>
-     <script src="./mdb_starter/resources/js/jquery.min.js"></script>
+    <script src="./mdb_starter/resources/js/jquery.min.js"></script>
 
     <!-- MDB core JavaScript LOCAL -->
     <script
@@ -381,9 +623,12 @@
     ></script>
 
     <!-- MDB core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"
+    ></script>
 
-<!-- For CUSTOM NAV -->
-<script src="./js/forNav.js"></script>
+    <!-- For CUSTOM NAV -->
+    <script src="./js/forNav.js"></script>
   </body>
 </html>

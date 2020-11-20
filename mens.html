@@ -35,7 +35,7 @@
       crossorigin="anonymous"
     ></script>
 
-     <!-- BOOTSTRAP SOCIAL -->
+    <!-- BOOTSTRAP SOCIAL -->
     <link rel="stylesheet" href="./css/bootstrap-social.css" />
 
     <!-- Bootstrap core CSS -->
@@ -112,7 +112,9 @@
                 <a href="#"><i class="fas fa-shopping-cart"></i></a>
               </li>
               <li>
-                <a href="#"><i class="fas fa-user-circle fa-lg"></i></a>
+                <a data-toggle="modal" data-target="#signUp">
+                  <i class="fas fa-user-circle fa-lg"></i>
+                </a>
               </li>
             </ul>
           </div>
@@ -125,15 +127,14 @@
       </nav>
     </header>
 
-    <main role="main">
+    <main role="main" style="padding-top: 100px">
       <section class="jumbotron text-center">
         <div class="container">
           <h1 class="jumbotron-heading">Mens ZC Collection</h1>
           <p class="lead text-white">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-            dapibus justo purus, quis facilisis ante fringilla vel. Suspendisse
-            pretium lobortis turpis. Donec non risus at lectus mattis luctus at
-            quis metus.
+            The latest men's fashion including best basics, updated classics,
+            stylish eveningwear and casual street style looks. Find your
+            favourites among our wide range of men's clothing for every occasion
           </p>
           <!-- <p>
             <a href="#" class="btn btn-primary my-2">Main call to action</a>
@@ -142,302 +143,532 @@
         </div>
       </section>
 
-      <div class="album py-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <img
-                  class="card-img-top"
-                  src="https://i.imgur.com/y3xz6cjh.jpg"
-                  alt="Card image cap"
-                />
+      <!-- START OF CARD FROM NIKS -->
+      <section>
+        <div class="container-fluid py-5">
+          <div class="row row-margin">
+            <!-- Grid column -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <!--Card-->
+              <div class="card mt-5 overlay inner">
+                <!--Card image-->
+                <div class="view">
+                  <img
+                    src="https://i.imgur.com/rlKhrpgh.jpg"
+                    class="card-img-top img-card"
+                    alt="photo"
+                  />
+                  <a href="#">
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+                <!--Card content-->
                 <div class="card-body">
-                  <h1 class="card-text">Price</h1>
-                  <p class="card-text">Product description</p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        <i class="fas fa-shopping-cart"></i> Add to cart
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        <i class="fas fa-heart"></i> Wishlist
-                      </button>
+                  <!--Title-->
+                  <h4 class="card-title mb-2">Jim</h4>
+                  <!--Text-->
+                  <span class="badge badge-danger mb-3">bestseller</span>
+                  <p class="card-text text-white">
+                    This edgy design improves a classic unsurpassed style.
+                  </p>
+                  <div class="card-footer pb-0">
+                    <div class="row mb-0">
+                      <span class="float-left">
+                        <strong>Php 1000</strong>
+                      </span>
+                      <span class="float-right">
+                        <a
+                          class="shoppingcart"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Add to Cart"
+                        >
+                          <i class="cart fas fa-shopping-cart ml-3"></i> Add to
+                          Cart
+                        </a>
+                      </span>
+                      <span class="float-right">
+                        <a
+                          class="shoppingcart"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Add to Cart"
+                        >
+                          <i class="cart fas fa-heart ml-3"></i> Wishlist
+                        </a>
+                      </span>
                     </div>
-                    <small class="text-muted">8 stocks</small>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <img
-                  class="card-img-top"
-                  src="https://i.imgur.com/y3xz6cjh.jpg"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <h1 class="card-text">Price</h1>
-                  <p class="card-text">Product description</p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        <i class="fas fa-shopping-cart"></i> Add to cart
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        <i class="fas fa-heart"></i> Wishlist
-                      </button>
-                    </div>
-                    <small class="text-muted">8 stocks</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <img
-                  class="card-img-top"
-                  src="https://i.imgur.com/y3xz6cjh.jpg"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <h1 class="card-text">Price</h1>
-                  <p class="card-text">Product description</p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        <i class="fas fa-shopping-cart"></i> Add to cart
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        <i class="fas fa-heart"></i> Wishlist
-                      </button>
-                    </div>
-                    <small class="text-muted">8 stocks</small>
-                  </div>
-                </div>
-              </div>
+              <!--/.Card-->
             </div>
 
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <img
-                  class="card-img-top"
-                  src="https://i.imgur.com/y3xz6cjh.jpg"
-                  alt="Card image cap"
-                />
+            <!-- Grid column -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <!--Card-->
+              <div class="card mt-5 overlay inner">
+                <!--Card image-->
+                <div class="view">
+                  <img
+                    src="https://i.imgur.com/4jgqBabh.jpg"
+                    class="card-img-top img-card"
+                    alt="photo"
+                  />
+                  <a href="#">
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+                <!--Card content-->
                 <div class="card-body">
-                  <h1 class="card-text">Price</h1>
-                  <p class="card-text">Product description</p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        <i class="fas fa-shopping-cart"></i> Add to cart
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        <i class="fas fa-heart"></i> Wishlist
-                      </button>
+                  <!--Title-->
+                  <h4 class="card-title mb-2">Frederick</h4>
+                  <!--Text-->
+                  <span class="badge badge-danger mb-3">bestseller</span>
+                  <p class="card-text text-white">
+                    Intricately textured style perfect anywhere you go.
+                  </p>
+                  <div class="card-footer pb-0">
+                    <div class="row mb-0">
+                      <span class="float-left">
+                        <strong>Php 1300</strong>
+                      </span>
+                      <span class="float-right">
+                        <a
+                          class="shoppingcart"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Add to Cart"
+                        >
+                          <i class="cart fas fa-shopping-cart ml-3"></i> Add to
+                          Cart
+                        </a>
+                      </span>
+                      <span class="float-right">
+                        <a
+                          class="shoppingcart"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Add to Cart"
+                        >
+                          <i class="cart fas fa-heart ml-3"></i> Wishlist
+                        </a>
+                      </span>
                     </div>
-                    <small class="text-muted">8 stocks</small>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <img
-                  class="card-img-top"
-                  src="https://i.imgur.com/y3xz6cjh.jpg"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <h1 class="card-text">Price</h1>
-                  <p class="card-text">Product description</p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        <i class="fas fa-shopping-cart"></i> Add to cart
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        <i class="fas fa-heart"></i> Wishlist
-                      </button>
-                    </div>
-                    <small class="text-muted">8 stocks</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <img
-                  class="card-img-top"
-                  src="https://i.imgur.com/y3xz6cjh.jpg"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <h1 class="card-text">Price</h1>
-                  <p class="card-text">Product description</p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        <i class="fas fa-shopping-cart"></i> Add to cart
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        <i class="fas fa-heart"></i> Wishlist
-                      </button>
-                    </div>
-                    <small class="text-muted">8 stocks</small>
-                  </div>
-                </div>
-              </div>
+              <!--/.Card-->
             </div>
 
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <img
-                  class="card-img-top"
-                  src="https://i.imgur.com/y3xz6cjh.jpg"
-                  alt="Card image cap"
-                />
+            <!-- Grid column -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <!--Card-->
+              <div class="card mt-5 overlay inner">
+                <!--Card image-->
+                <div class="view">
+                  <img
+                    src="https://i.imgur.com/m0Hs8d6h.jpg"
+                    class="card-img-top img-card"
+                    alt="photo"
+                  />
+                  <a href="#">
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+                <!--Card content-->
                 <div class="card-body">
-                  <h1 class="card-text">Price</h1>
-                  <p class="card-text">Product description</p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        <i class="fas fa-shopping-cart"></i> Add to cart
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        <i class="fas fa-heart"></i> Wishlist
-                      </button>
+                  <!--Title-->
+                  <h4 class="card-title mb-2">Nicolas</h4>
+                  <!--Text-->
+                  <span class="badge badge-danger mb-3">bestseller</span>
+                  <p class="card-text text-white">
+                    The combination of cotton and cashmere adds the perfect
+                    amount of comfort.
+                  </p>
+                  <div class="card-footer pb-0">
+                    <div class="row mb-0">
+                      <span class="float-left">
+                        <strong>Php 1600</strong>
+                      </span>
+                      <span class="float-right">
+                        <a
+                          class="shoppingcart"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Add to Cart"
+                        >
+                          <i class="cart fas fa-shopping-cart ml-3"></i> Add to
+                          Cart
+                        </a>
+                      </span>
+                      <span class="float-right">
+                        <a
+                          class="shoppingcart"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Add to Cart"
+                        >
+                          <i class="cart fas fa-heart ml-3"></i> Wishlist
+                        </a>
+                      </span>
                     </div>
-                    <small class="text-muted">8 stocks</small>
                   </div>
                 </div>
               </div>
+              <!--/.Card-->
             </div>
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <img
-                  class="card-img-top"
-                  src="https://i.imgur.com/y3xz6cjh.jpg"
-                  alt="Card image cap"
-                />
+
+            <!-- Grid column -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <!--Card-->
+              <div class="card mt-5 overlay inner">
+                <!--Card image-->
+                <div class="view">
+                  <img
+                    src="https://i.imgur.com/jZnoA39h.jpg"
+                    class="card-img-top img-card"
+                    alt="photo"
+                  />
+                  <a href="#">
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+                <!--Card content-->
                 <div class="card-body">
-                  <h1 class="card-text">Price</h1>
-                  <p class="card-text">Product description</p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        <i class="fas fa-shopping-cart"></i> Add to cart
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        <i class="fas fa-heart"></i> Wishlist
-                      </button>
+                  <!--Title-->
+                  <h4 class="card-title mb-2">Alvin</h4>
+                  <!--Text-->
+                  <span class="badge badge-danger mb-3">bestseller</span>
+                  <p class="card-text text-white">
+                    A fit that you can dress up or dress down and flatters from
+                    every angle
+                  </p>
+                  <div class="card-footer pb-0">
+                    <div class="row mb-0">
+                      <span class="float-left">
+                        <strong>Php 1800</strong>
+                      </span>
+                      <span class="float-right">
+                        <a
+                          class="shoppingcart"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Add to Cart"
+                        >
+                          <i class="cart fas fa-shopping-cart ml-3"></i> Add to
+                          Cart
+                        </a>
+                      </span>
+                      <span class="float-right">
+                        <a
+                          class="shoppingcart"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Add to Cart"
+                        >
+                          <i class="cart fas fa-heart ml-3"></i> Wishlist
+                        </a>
+                      </span>
                     </div>
-                    <small class="text-muted">8 stocks</small>
                   </div>
                 </div>
               </div>
+              <!--/.Card-->
             </div>
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <img
-                  class="card-img-top"
-                  src="https://i.imgur.com/y3xz6cjh.jpg"
-                  alt="Card image cap"
-                />
+
+            <!-- Grid column -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <!--Card-->
+              <div class="card mt-5 overlay inner">
+                <!--Card image-->
+                <div class="view">
+                  <img
+                    src="https://i.imgur.com/pCfCmLCh.jpg"
+                    class="card-img-top img-card"
+                    alt="photo"
+                  />
+                  <a href="#">
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+                <!--Card content-->
                 <div class="card-body">
-                  <h1 class="card-text">Price</h1>
-                  <p class="card-text">Product description</p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        <i class="fas fa-shopping-cart"></i> Add to cart
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        <i class="fas fa-heart"></i> Wishlist
-                      </button>
+                  <!--Title-->
+                  <h4 class="card-title mb-2">Umar</h4>
+                  <!--Text-->
+                  <span class="badge badge-danger mb-3">bestseller</span>
+                  <p class="card-text text-white">
+                    Light up your look with this flawless fit.
+                  </p>
+                  <div class="card-footer pb-0">
+                    <div class="row mb-0">
+                      <span class="float-left">
+                        <strong>Php 1000</strong>
+                      </span>
+                      <span class="float-right">
+                        <a
+                          class="shoppingcart"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Add to Cart"
+                        >
+                          <i class="cart fas fa-shopping-cart ml-3"></i> Add to
+                          Cart
+                        </a>
+                      </span>
+                      <span class="float-right">
+                        <a
+                          class="shoppingcart"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Add to Cart"
+                        >
+                          <i class="cart fas fa-heart ml-3"></i> Wishlist
+                        </a>
+                      </span>
                     </div>
-                    <small class="text-muted">8 stocks</small>
                   </div>
                 </div>
               </div>
+              <!--/.Card-->
+            </div>
+
+            <!-- Grid column -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <!--Card-->
+              <div class="card mt-5 overlay inner">
+                <!--Card image-->
+                <div class="view">
+                  <img
+                    src="https://i.imgur.com/vcUxLSMh.jpg"
+                    class="card-img-top img-card"
+                    alt="photo"
+                  />
+                  <a href="#">
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+                <!--Card content-->
+                <div class="card-body">
+                  <!--Title-->
+                  <h4 class="card-title mb-2">Dewey</h4>
+                  <!--Text-->
+                  <span class="badge badge-danger mb-3">bestseller</span>
+                  <p class="card-text text-white">
+                    A comfortable fit perfect in showing off your trendsetting
+                    style.
+                  </p>
+                  <div class="card-footer pb-0">
+                    <div class="row mb-0">
+                      <span class="float-left">
+                        <strong>Php 1100</strong>
+                      </span>
+                      <span class="float-right">
+                        <a
+                          class="shoppingcart"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Add to Cart"
+                        >
+                          <i class="cart fas fa-shopping-cart ml-3"></i> Add to
+                          Cart
+                        </a>
+                      </span>
+                      <span class="float-right">
+                        <a
+                          class="shoppingcart"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Add to Cart"
+                        >
+                          <i class="cart fas fa-heart ml-3"></i> Wishlist
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--/.Card-->
+            </div>
+
+            <!-- Grid column -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <!--Card-->
+              <div class="card mt-5 overlay inner">
+                <!--Card image-->
+                <div class="view">
+                  <img
+                    src="https://i.imgur.com/D027Vzfh.jpg"
+                    class="card-img-top img-card"
+                    alt="photo"
+                  />
+                  <a href="#">
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+                <!--Card content-->
+                <div class="card-body">
+                  <!--Title-->
+                  <h4 class="card-title mb-2">Oliver</h4>
+                  <!--Text-->
+                  <span class="badge badge-danger mb-3">bestseller</span>
+                  <p class="card-text text-white">
+                    Clashing colors draw attention away from your fabulous
+                    fashion and seek style.
+                  </p>
+                  <div class="card-footer pb-0">
+                    <div class="row mb-0">
+                      <span class="float-left">
+                        <strong>Php 1100</strong>
+                      </span>
+                      <span class="float-right">
+                        <a
+                          class="shoppingcart"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Add to Cart"
+                        >
+                          <i class="cart fas fa-shopping-cart ml-3"></i> Add to
+                          Cart
+                        </a>
+                      </span>
+                      <span class="float-right">
+                        <a
+                          class="shoppingcart"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Add to Cart"
+                        >
+                          <i class="cart fas fa-heart ml-3"></i> Wishlist
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--/.Card-->
+            </div>
+
+            <!-- Grid column -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <!--Card-->
+              <div class="card mt-5 overlay inner">
+                <!--Card image-->
+                <div class="view">
+                  <img
+                    src="https://i.imgur.com/JwVPL9Ih.jpg"
+                    class="card-img-top img-card"
+                    alt="photo"
+                  />
+                  <a href="#">
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+                <!--Card content-->
+                <div class="card-body">
+                  <!--Title-->
+                  <h4 class="card-title mb-2">Paul</h4>
+                  <!--Text-->
+                  <span class="badge badge-danger mb-3">bestseller</span>
+                  <p class="card-text text-white">
+                    A fit that you can dress up or dress down and flatters from
+                    every angle.
+                  </p>
+                  <div class="card-footer pb-0">
+                    <div class="row mb-0">
+                      <span class="float-left">
+                        <strong>Php 1100</strong>
+                      </span>
+                      <span class="float-right">
+                        <a
+                          class="shoppingcart"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Add to Cart"
+                        >
+                          <i class="cart fas fa-shopping-cart ml-3"></i> Add to
+                          Cart
+                        </a>
+                      </span>
+                      <span class="float-right">
+                        <a
+                          class="shoppingcart"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Add to Cart"
+                        >
+                          <i class="cart fas fa-heart ml-3"></i> Wishlist
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--/.Card-->
+            </div>
+
+            <!-- Grid column -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <!--Card-->
+              <div class="card mt-5 overlay inner">
+                <!--Card image-->
+                <div class="view">
+                  <img
+                    src="https://i.imgur.com/PRqN6zMh.jpg"
+                    class="card-img-top img-card"
+                    alt="photo"
+                  />
+                  <a href="#">
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+                <!--Card content-->
+                <div class="card-body">
+                  <!--Title-->
+                  <h4 class="card-title mb-2">Lucas</h4>
+                  <!--Text-->
+                  <span class="badge badge-danger mb-3">bestseller</span>
+                  <p class="card-text text-white">
+                    A fit that smoothens body shape and provides remarkable
+                    comfort.
+                  </p>
+                  <div class="card-footer pb-0">
+                    <div class="row mb-0">
+                      <span class="float-left">
+                        <strong>Php 1200</strong>
+                      </span>
+                      <span class="float-right">
+                        <a
+                          class="shoppingcart"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Add to Cart"
+                        >
+                          <i class="cart fas fa-shopping-cart ml-3"></i> Add to
+                          Cart
+                        </a>
+                      </span>
+                      <span class="float-right">
+                        <a
+                          class="shoppingcart"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Add to Cart"
+                        >
+                          <i class="cart fas fa-heart ml-3"></i> Wishlist
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--/.Card-->
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      <!-- END OF CARDS FROM NIKS -->
     </main>
 
     <!-- <footer class="text-muted">
@@ -461,8 +692,11 @@
             /></a>
             <!-- <p class="footer-about h5 mt-3">About Zup Clothing</p> -->
             <p class="h6 mt-4">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              ZC is the leading name in online shopping for fashion, carrying an
+              ever-expanding line-up of top local and international brands
+              tailored for consumers around the world. Our selection of over
+              120.000 products covers every aspect of fashion, for men and women
+              and so much more.
             </p>
             <div class="footer-social-icons mb-sm-3">
               <p class="footer-follow h5 mt-3">FIND US ON</p>
@@ -512,6 +746,10 @@
                 <li>
                   <a href="./contact.html">Contact</a>
                 </li>
+                <!-- FEEDBACK MODAL -->
+                <li>
+                  <a data-toggle="modal" data-target="#feedback">Feedback</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -535,18 +773,16 @@
                     >
                   </div>
                   <!-- BUTTONS RESPONSIVE ISSUE HERE -->
-                    <div style="display: flex; justify-content: space-between">
-                      <!-- <div class="float-left"> -->
-                      <button type="button" class="button btnwomen">
-                        FOR WOMEN
-                      </button>
-                      <!-- </div> -->
-                      <!-- <div class="float-right"> -->
-                      <button type="button" class="button btnmen">
-                        FOR MEN
-                      </button>
-                      <!-- </div> -->
-                    </div>
+                  <div style="display: flex; justify-content: space-between">
+                    <!-- <div class="float-left"> -->
+                    <button type="button" class="button btnwomen">
+                      FOR WOMEN
+                    </button>
+                    <!-- </div> -->
+                    <!-- <div class="float-right"> -->
+                    <button type="button" class="button btnmen">FOR MEN</button>
+                    <!-- </div> -->
+                  </div>
                 </li>
               </ul>
             </div>
@@ -556,8 +792,213 @@
       <div class="footer-copyright text-center py-3 text-white">
         © 2020
         <a href="#">Zup Clothing - All rights reserved.</a>
+        <p>
+          Created with dedication, hard work and passion by Group 2 - Creative
+          Web Design Batch 1 -
+          <a
+            href="https://www.facebook.com/mindtechTC/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Mindtech Training And Development Institute Inc.</a
+          >
+        </p>
+        <a href="./team.html">Meet the team!</a>
       </div>
     </footer>
+
+    <!-- Sign-up Modal -->
+    <div
+      class="modal fade"
+      id="signUp"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container mt-1">
+              <h1>
+                <img
+                  src="https://i.imgur.com/xirkbAI.jpg"
+                  alt="ZC Logo"
+                  width="80"
+                  height="80"
+                />
+                SIGN-UP
+              </h1>
+
+              <div class="row">
+                <div class="col-sm-8">
+                  <div class="card">
+                    <div class="card-body">
+                      <!-- Makes POST request to /register route -->
+                      <form action="/register" method="POST">
+                        <div class="form-group">
+                          <label for="email">Email</label>
+                          <input
+                            type="email"
+                            class="form-control"
+                            name="username"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label for="password">Password</label>
+                          <input
+                            type="password"
+                            class="form-control"
+                            name="password"
+                          />
+                        </div>
+                        <button type="submit" class="btn btn-dark">
+                          Register
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-4">
+                  <div class="card social-block">
+                    <div class="card-body">
+                      <a
+                        class="btn btn-block btn-social btn-google"
+                        href="/auth/google"
+                        role="button"
+                      >
+                        <i class="fab fa-google"></i>
+                        Sign Up with Google
+                      </a>
+                    </div>
+                    <div class="card-body">
+                      <a
+                        class="btn btn-block btn-social btn-facebook"
+                        href="/auth/facebook"
+                        role="button"
+                      >
+                        <i class="fab fa-facebook"></i>
+                        Sign Up with Facebook
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEEDBACK MODAL -->
+    <div
+      class="modal fade"
+      id="feedback"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="py-1 text-center">
+              <img
+                class="d-block mx-auto mb-1"
+                src="https://i.imgur.com/xirkbAI.jpg"
+                alt="ZC Logo"
+                width="80"
+                height="80"
+              />
+              <h3>We'd like to hear from you!</h3>
+            </div>
+            <form>
+              <div class="mb-1">
+                <label for="firstName">Name*</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="tName"
+                  placeholder=""
+                  value=""
+                  required
+                />
+              </div>
+
+              <div class="mb-1">
+                <label for="email">Email*</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="you@example.com"
+                  required
+                />
+              </div>
+              <div class="mb-1">
+                <label for="cellPhone">Phone</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="cellPhone"
+                  placeholder=""
+                  value=""
+                />
+              </div>
+
+              <div class="mb-1">
+                <label for="address">Store Location*</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="address"
+                  placeholder="1234 Main St"
+                  required
+                />
+              </div>
+
+              <div class="mb-1">
+                <label for="message">Message</label>
+              </div>
+              <div class="mb-1">
+                <textarea
+                  id="story"
+                  class="form-control"
+                  name="story"
+                  rows="2"
+                  cols="55"
+                ></textarea>
+              </div>
+
+              <hr class="mb-1" />
+              <button class="btn btn-success btn-sm btn-block" type="submit">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

@@ -112,7 +112,9 @@
                 <a href="#"><i class="fas fa-shopping-cart"></i></a>
               </li>
               <li>
-                <a href="#"><i class="fas fa-user-circle fa-lg"></i></a>
+                <a data-toggle="modal" data-target="#signUp">
+                  <i class="fas fa-user-circle fa-lg"></i>
+                </a>
               </li>
             </ul>
           </div>
@@ -125,15 +127,18 @@
       </nav>
     </header>
 
-    <main role="main">
+    <main role="main" style="padding-top: 100px">
       <section class="jumbotron text-center">
         <div class="container">
           <h1 class="jumbotron-heading">Womens ZC Collection</h1>
           <p class="lead text-white">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-            dapibus justo purus, quis facilisis ante fringilla vel. Suspendisse
-            pretium lobortis turpis. Donec non risus at lectus mattis luctus at
-            quis metus.
+            Be inspired by our fashion trends-focused edits such as floral
+            fever, nudes and neutrals, as well as off-duty denim and athleisure
+            spotlight. Our comprehensive selection keeps you looking fresh from
+            top to bottom, with tops and dresses of all styles, jumpsuits and
+            rompers in a myriad of colors, and sportswear that brings you closer
+            to your fitness goals, all in a range of sizes and styles, including
+            plus-size clothing, to suit any taste.
           </p>
           <!-- <p>
             <a href="#" class="btn btn-primary my-2">Main call to action</a>
@@ -691,8 +696,11 @@
             /></a>
             <!-- <p class="footer-about h5 mt-3">About Zup Clothing</p> -->
             <p class="h6 mt-4">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              ZC is the leading name in online shopping for fashion, carrying an
+              ever-expanding line-up of top local and international brands
+              tailored for consumers around the world. Our selection of over
+              120.000 products covers every aspect of fashion, for men and women
+              and so much more.
             </p>
             <div class="footer-social-icons mb-sm-3">
               <p class="footer-follow h5 mt-3">FIND US ON</p>
@@ -742,6 +750,10 @@
                 <li>
                   <a href="./contact.html">Contact</a>
                 </li>
+                <!-- FEEDBACK MODAL -->
+                <li>
+                  <a data-toggle="modal" data-target="#feedback">Feedback</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -784,8 +796,213 @@
       <div class="footer-copyright text-center py-3 text-white">
         © 2020
         <a href="#">Zup Clothing - All rights reserved.</a>
+        <p>
+          Created with dedication, hard work and passion by Group 2 - Creative
+          Web Design Batch 1 -
+          <a
+            href="https://www.facebook.com/mindtechTC/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Mindtech Training And Development Institute Inc.</a
+          >
+        </p>
+        <a href="./team.html">Meet the team!</a>
       </div>
     </footer>
+
+    <!-- Sign-up Modal -->
+    <div
+      class="modal fade"
+      id="signUp"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container mt-1">
+              <h1>
+                <img
+                  src="https://i.imgur.com/xirkbAI.jpg"
+                  alt="ZC Logo"
+                  width="80"
+                  height="80"
+                />
+                SIGN-UP
+              </h1>
+
+              <div class="row">
+                <div class="col-sm-8">
+                  <div class="card">
+                    <div class="card-body">
+                      <!-- Makes POST request to /register route -->
+                      <form action="/register" method="POST">
+                        <div class="form-group">
+                          <label for="email">Email</label>
+                          <input
+                            type="email"
+                            class="form-control"
+                            name="username"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label for="password">Password</label>
+                          <input
+                            type="password"
+                            class="form-control"
+                            name="password"
+                          />
+                        </div>
+                        <button type="submit" class="btn btn-dark">
+                          Register
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-4">
+                  <div class="card social-block">
+                    <div class="card-body">
+                      <a
+                        class="btn btn-block btn-social btn-google"
+                        href="/auth/google"
+                        role="button"
+                      >
+                        <i class="fab fa-google"></i>
+                        Sign Up with Google
+                      </a>
+                    </div>
+                    <div class="card-body">
+                      <a
+                        class="btn btn-block btn-social btn-facebook"
+                        href="/auth/facebook"
+                        role="button"
+                      >
+                        <i class="fab fa-facebook"></i>
+                        Sign Up with Facebook
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEEDBACK MODAL -->
+    <div
+      class="modal fade"
+      id="feedback"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="py-1 text-center">
+              <img
+                class="d-block mx-auto mb-1"
+                src="https://i.imgur.com/xirkbAI.jpg"
+                alt="ZC Logo"
+                width="80"
+                height="80"
+              />
+              <h3>We'd like to hear from you!</h3>
+            </div>
+            <form>
+              <div class="mb-1">
+                <label for="firstName">Name*</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="tName"
+                  placeholder=""
+                  value=""
+                  required
+                />
+              </div>
+
+              <div class="mb-1">
+                <label for="email">Email*</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="you@example.com"
+                  required
+                />
+              </div>
+              <div class="mb-1">
+                <label for="cellPhone">Phone</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="cellPhone"
+                  placeholder=""
+                  value=""
+                />
+              </div>
+
+              <div class="mb-1">
+                <label for="address">Store Location*</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="address"
+                  placeholder="1234 Main St"
+                  required
+                />
+              </div>
+
+              <div class="mb-1">
+                <label for="message">Message</label>
+              </div>
+              <div class="mb-1">
+                <textarea
+                  id="story"
+                  class="form-control"
+                  name="story"
+                  rows="2"
+                  cols="55"
+                ></textarea>
+              </div>
+
+              <hr class="mb-1" />
+              <button class="btn btn-success btn-sm btn-block" type="submit">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
